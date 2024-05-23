@@ -9,14 +9,14 @@
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>Brushed | Responsive One Page Template</title>   
+<title>Brushed | Responsive One Page Template</title>
 
-<meta name="description" content="Insert Your Site Description" /> 
+<meta name="description" content="Insert Your Site Description" />
 
 <!-- Mobile Specifics -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="HandheldFriendly" content="true"/>
-<meta name="MobileOptimized" content="320"/>   
+<meta name="MobileOptimized" content="320"/>
 
 <!-- Mobile Internet Explorer ClearType Technology -->
 <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
@@ -78,6 +78,67 @@
 </script>
 <!-- End Analytics -->
 
+<style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .overlay img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+      color: white;
+      width: 90%; /* Adjust width for mobile */
+      max-width: 600px; /* Max width for larger screens */
+    }
+    .content h1 {
+      font-size: 6vw; /* Responsive font size */
+      margin: 0;
+    }
+    .content p {
+      font-size: 4vw; /* Responsive font size */
+      margin: 5px 0;
+    }
+    .content button {
+      display: block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 4vw; /* Responsive font size */
+      cursor: pointer;
+    }
+    @media (min-width: 600px) {
+      .content h1 {
+        font-size: 48px;
+      }
+      .content p {
+        font-size: 24px;
+      }
+      .content button {
+        font-size: 18px;
+      }
+    }
+  </style>
+
 </head>
 
 
@@ -92,18 +153,27 @@
 <!-- End of Splash Screen -->
 
 <!-- Homepage Slider -->
-<div id="home-slider">	
-    <div class="overlay"></div>
+<div id="home-slider">
+  <div class="overlay">
+  <img src="./include/img/slider-images/image01.jpg" alt="Background Image">
+</div>
+<div class="content">
+  <h1>Your Main Heading</h1>
+  <p>A secondary line of text</p>
+  <p>Another line of text, slightly smaller</p>
+  <button>Register Now</button>
+</div>
+
 
     <div class="slider-text">
     	<div id="slidecaption"></div>
-    </div>   
-	
+    </div>
+
 	<div class="control-nav">
         <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
         <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
         <ul id="slide-list"></ul>
-        
+
         <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
     </div>
 </div>
@@ -113,11 +183,11 @@
 <header>
     <div class="sticky-nav">
     	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-        
+
         <div id="logo">
         	<a id="goUp" href="#home-slider" title="Brushed | Responsive One Page Template">Brushed Template</a>
         </div>
-        
+
         <nav id="menu">
         	<ul id="menu-nav">
             	<li class="current"><a href="#home-slider">Home</a></li>
@@ -127,7 +197,7 @@
 				<li><a href="shortcodes.html" class="external">Shortcodes</a></li>
             </ul>
         </nav>
-        
+
     </div>
 </header>
 <!-- End Header -->
@@ -145,7 +215,7 @@
             </div>
         </div>
         <!-- End Title Page -->
-        
+
         <!-- Portfolio Projects -->
         <div class="row">
         	<div class="span3">
@@ -161,12 +231,12 @@
                 </nav>
                 <!-- End Filter -->
             </div>
-            
+
             <div class="span9">
             	<div class="row">
                 	<section id="projects">
                     	<ul id="thumbs">
-                        
+
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 design">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
@@ -178,7 +248,7 @@
                                 <img src="include/img/work/thumbs/image-01.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                         	<!-- End Item Project -->
-                            
+
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 design">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
@@ -190,7 +260,7 @@
                                 <img src="include/img/work/thumbs/image-02.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                         	<!-- End Item Project -->
-                            
+
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 photography">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
@@ -202,7 +272,7 @@
                                 <img src="include/img/work/thumbs/image-03.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                         	<!-- End Item Project -->
-                            
+
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 video">
                             	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
@@ -214,7 +284,7 @@
                                 <img src="include/img/work/thumbs/image-08.jpg" alt="Video">
                             </li>
                         	<!-- End Item Project -->
-                            
+
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 photography">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
@@ -226,7 +296,7 @@
                                 <img src="include/img/work/thumbs/image-04.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                         	<!-- End Item Project -->
-                            
+
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 photography">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
@@ -238,7 +308,7 @@
                                 <img src="include/img/work/thumbs/image-05.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                         	<!-- End Item Project -->
-                            
+
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 video">
                             	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
@@ -250,7 +320,7 @@
                                 <img src="include/img/work/thumbs/image-09.jpg" alt="Video">
                             </li>
                         	<!-- End Item Project -->
-                            
+
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 design">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
@@ -262,7 +332,7 @@
                                 <img src="include/img/work/thumbs/image-06.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                         	<!-- End Item Project -->
-                            
+
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3 design">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
@@ -276,7 +346,7 @@
                         	<!-- End Item Project -->
                         </ul>
                     </section>
-                    
+
             	</div>
             </div>
         </div>
@@ -298,10 +368,10 @@
         </div>
     </div>
     <!-- End Title Page -->
-    
+
     <!-- People -->
     <div class="row">
-    	
+
         <!-- Start Profile -->
     	<div class="span4 profile">
         	<div class="image-wrap">
@@ -312,9 +382,9 @@
                 <img src="include/img/profile/profile-01.jpg" alt="John Doe">
             </div>
             <h3 class="profile-name">John Doe</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
+            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>.
             Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
+
             <div class="social">
             	<ul class="social-icons">
                 	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
@@ -324,7 +394,7 @@
             </div>
         </div>
         <!-- End Profile -->
-        
+
         <!-- Start Profile -->
     	<div class="span4 profile">
         	<div class="image-wrap">
@@ -335,9 +405,9 @@
                 <img src="include/img/profile/profile-02.jpg" alt="Jane Helf">
             </div>
             <h3 class="profile-name">Jane Helf</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
+            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>.
             Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
+
             <div class="social">
             	<ul class="social-icons">
                 	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
@@ -346,7 +416,7 @@
             </div>
         </div>
         <!-- End Profile -->
-        
+
         <!-- Start Profile -->
     	<div class="span4 profile">
         	<div class="image-wrap">
@@ -357,9 +427,9 @@
                 <img src="include/img/profile/profile-03.jpg" alt="Joshua Insanus">
             </div>
             <h3 class="profile-name">Joshua Insanus</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
+            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>.
             Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
+
             <div class="social">
             	<ul class="social-icons">
                 	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
@@ -370,7 +440,7 @@
             </div>
         </div>
         <!-- End Profile -->
-        
+
     </div>
     <!-- End People -->
 </div>
@@ -391,11 +461,11 @@
         </div>
     </div>
     <!-- End Title Page -->
-    
+
     <!-- Contact Form -->
     <div class="row">
     	<div class="span9">
-        
+
         	<form id="contact-form" class="contact-form" action="#">
             	<p class="contact-name">
             		<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
@@ -409,14 +479,14 @@
                 <p class="contact-submit">
                 	<a id="contact-submit" class="submit" href="#">Send Your Email</a>
                 </p>
-                
+
                 <div id="response">
-                
+
                 </div>
             </form>
-         
+
         </div>
-        
+
         <div class="span3">
         	<div class="contact-details">
         		<h3>Contact Details</h3>
@@ -447,8 +517,8 @@
                 <div class="follow">
                     <a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><i class="font-icon-social-twitter"></i></a>
                 </div>
-                    
-                <div id="ticker" class="query"> 
+
+                <div id="ticker" class="query">
                 </div>
             </div>
         </div>
