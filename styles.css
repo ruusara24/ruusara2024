@@ -204,7 +204,6 @@ nav .nav-links a:hover {
 .see-more:hover {
     background-color: darkred;
 }
-
 @media (max-width: 768px) {
     .overlay {
         align-items: center;
@@ -232,5 +231,32 @@ nav .nav-links a:hover {
     }
     .logo1 img {
         max-width: 80px;
+    }
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-content img {
+        margin-left: 0;
+        margin-bottom: 20px;
+        height: auto;
+        border-right: none;
+    }
+
+    .about-content .about-text {
+        border-left: none;
+        padding-left: 0;
+        text-align: right;
+    }
+
+    .about-section h2 {
+        text-align: center;
+    }
+    .about-content .about-text {
+        border-left: 3px solid red;
+        padding-left: 20px;
+        height: 200px;
     }
 }
