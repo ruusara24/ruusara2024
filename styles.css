@@ -248,6 +248,11 @@ nav .nav-links a:hover {
     margin-top: 20px;
 }
 
+#events h2{
+  text-align: center;
+}
+
+
 #judge-board h2{
   text-align: center;
 }
