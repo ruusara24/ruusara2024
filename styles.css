@@ -339,7 +339,7 @@ nav .nav-links a:hover {
         border-left: none;
         padding-left: 0;
         text-align: left;
-        height: 500px;
+        height: 600px;
     }
 
     .about-section h2 {
@@ -349,7 +349,7 @@ nav .nav-links a:hover {
         border-left: 3px solid red;
         padding-left: 20px;
         text-align: left;
-        height: 500px;
+        height: 600px;
     }
     .judges-container {
         flex-direction: column;
