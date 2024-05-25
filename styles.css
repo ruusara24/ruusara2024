@@ -270,12 +270,12 @@ nav .nav-links a:hover {
 }
 
 
-.additional-image{
+/*.additional-image{
     position: relative;
     height: 50vh;
     width: 50vh;
     background: url('./include/text/woman_bg.jpg') no-repeat center center/cover;
-}
+}*/
 
 @media (max-width: 768px) {
     .overlay {
@@ -283,10 +283,10 @@ nav .nav-links a:hover {
         text-align: center;
     }
     .overlay h1 {
-        font-size:2.5em;
+        font-size:4.5em;
     }
     .overlay h2 {
-        font-size: 1.5em;
+        font-size: 2.5em;
         margin: 5px 0 0 242px;
         font-family: 'ApexA';
     }
@@ -354,8 +354,11 @@ nav .nav-links a:hover {
     .judges-container {
         flex-direction: column;
     }
-    .background{
+    /*.background{
         background:black;
+    }*/
+    .background{
+        background: url("./include/text/woman_bg.jpg")no-repeat center center/cover;
     }
 
 }
@@ -363,7 +366,7 @@ nav .nav-links a:hover {
     .background {
         background: url('include/img/slider-images/image01.jpg') no-repeat center center/cover;
     }
-    .additional-image1{
+    /*.additional-image1{
         display: none;
-    }
+    }*/
 }
