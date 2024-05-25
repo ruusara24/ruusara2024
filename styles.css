@@ -1,18 +1,22 @@
 @font-face {
     font-family: 'ApexA';
-    src: url('include/text/apex-a.pura-008.ttf') format('truetype');
+    src: url('include/text/apex.ttf') format('truetype');
 }
 @font-face {
     font-family: 'PoppinsLight';
-    src: url('include/text/Poppins-Medium (1).ttf') format('truetype');
+    src: url('include/text/poppins-light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url('include/text/poppins-medium.ttf') format('truetype');
 }
 
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'PoppinsLight', sans-serif;
     background-color: #000;
     color: white;
+    font-family: 'PoppinsLight';
 }
 
 nav {
@@ -79,29 +83,30 @@ nav .nav-links a:hover {
 
 .overlay h1 {
     color: white;
-    font-size: 4em;
+    font-size:4em;
     margin: 10px;
-    margin-left: 90px;
+    margin-left: 200px;
     font-family: 'ApexA';
 }
 
 .overlay h2 {
     color: white;
     font-size: 1.5em;
-    margin: 5px 0 0 180px;
+    margin: 5px 0 0 242px;
     font-family: 'ApexA';
 }
 
 .overlay h2 span {
     display: block;
     font-size: 2em;
-    margin-left: 90px;
+    margin-left: 0;
+    text-align: center;
 }
 
 .horizontal-line {
     width: 350px;
     border-top: 2px solid gray;
-    margin: 10px 10px 20px 200px;
+    margin: 10px 10px 20px 165px;
 }
 
 .register-button {
@@ -119,6 +124,7 @@ nav .nav-links a:hover {
 
 .register-button:hover {
     background-color: darkred;
+    font-family: 'PoppinsMedium', Courier, monospace;
 }
 
 .deadline-text {
@@ -126,7 +132,7 @@ nav .nav-links a:hover {
     font-size: 1em;
     margin-top: 20px;
     margin-left: 210px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'PoppinsLight', Courier, monospace;
 }
 
 .section {
@@ -259,4 +265,5 @@ nav .nav-links a:hover {
         padding-left: 20px;
         height: 200px;
     }
+
 }
