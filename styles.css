@@ -210,6 +210,53 @@ nav .nav-links a:hover {
 .see-more:hover {
     background-color: darkred;
 }
+.judge-board-section {
+    background: #333;
+}
+
+.judges-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.judge-card {
+    margin: 10px;
+    text-align: center;
+}
+
+.judge-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.judge-name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.social-media-section {
+    background: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+    filter: hue-rotate(330deg);
+}
 @media (max-width: 768px) {
     .overlay {
         align-items: center;
@@ -264,6 +311,9 @@ nav .nav-links a:hover {
         border-left: 3px solid red;
         padding-left: 20px;
         height: 200px;
+    }
+    .judges-container {
+        flex-direction: column;
     }
 
 }
