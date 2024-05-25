@@ -268,6 +268,15 @@ nav .nav-links a:hover {
     transform: scale(1.1);
     filter: hue-rotate(330deg);
 }
+
+
+.additional-image{
+    position: relative;
+    height: 50vh;
+    width: 50vh;
+    background: url('./include/text/woman_bg.jpg') no-repeat center center/cover;
+}
+
 @media (max-width: 768px) {
     .overlay {
         align-items: center;
@@ -343,5 +352,8 @@ nav .nav-links a:hover {
 @media (min-width: 769px) {
     .background {
         background: url('include/img/slider-images/image01.jpg') no-repeat center center/cover;
+    }
+    .additional-image1{
+        display: none;
     }
 }
