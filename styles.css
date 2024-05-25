@@ -29,13 +29,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px;
+    padding: 5px 0px;
     z-index: 1000;
 }
 
 nav .logo img {
     max-width: 50px;
     height: auto;
+    margin-left: 20px;
 }
 
 nav .nav-links a {
@@ -66,19 +67,20 @@ nav .nav-links a:hover {
 .logo1 img {
     max-width: 100px;
     height: auto;
+
 }
 .overlay {
     position: absolute;
     top: 0px;
     left: 0;
     width: 100%;
-    height: calc(100% - 20px);
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 10px;
+    padding: 0px;
 }
 
 .overlay h1 {
@@ -246,6 +248,10 @@ nav .nav-links a:hover {
     margin-top: 20px;
 }
 
+#judge-board h2{
+  text-align: center;
+}
+
 .social-icon img {
     width: 50px;
     height: 50px;
@@ -284,6 +290,7 @@ nav .nav-links a:hover {
     }
     .logo1 img {
         max-width: 80px;
+        margin: 10px;
     }
     .about-content {
         flex-direction: column;
@@ -298,6 +305,13 @@ nav .nav-links a:hover {
         border-right: none;
     }
 
+    #about h2{
+      text-align: center;
+    }
+    #events h2{
+      text-align: center;
+    }
+
     .about-content .about-text {
         border-left: none;
         padding-left: 0;
@@ -310,6 +324,7 @@ nav .nav-links a:hover {
     .about-content .about-text {
         border-left: 3px solid red;
         padding-left: 20px;
+        text-align: left;
         height: 200px;
     }
     .judges-container {
