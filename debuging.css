@@ -10,7 +10,7 @@ body {
 }
 
 .event-details-section {
-    text-align: center;
+    text-align: left;
 }
 
 .event-details-section img {
@@ -21,12 +21,17 @@ body {
     border-radius: 10px;
 }
 
+li {
+            padding-bottom: 10px; /* Adjust the value as needed */
+        }
+
 .event-details-section h3 {
+  text-align: center;
     margin-top: 20px;
 }
 
 .event-details-section p {
-    
+
     max-width: 80%;
     margin: 20px auto;
     text-align: left;

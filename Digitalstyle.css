@@ -10,7 +10,7 @@ body {
 }
 
 .event-details-section {
-    text-align: center;
+    text-align: left;
 }
 
 .event-details-section img {
@@ -23,10 +23,15 @@ body {
 
 .event-details-section h3 {
     margin-top: 20px;
+    text-align: center;
 }
 
+li {
+            padding-bottom: 10px; /* Adjust the value as needed */
+        }
+
 .event-details-section p {
-    
+
     max-width: 80%;
     margin: 20px auto;
     text-align: left;
