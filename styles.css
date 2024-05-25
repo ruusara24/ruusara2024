@@ -335,5 +335,13 @@ nav .nav-links a:hover {
     .judges-container {
         flex-direction: column;
     }
+    .background{
+        background:black;
+    }
 
+}
+@media (min-width: 769px) {
+    .background {
+        background: url('include/img/slider-images/image01.jpg') no-repeat center center/cover;
+    }
 }
