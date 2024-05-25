@@ -282,9 +282,18 @@ nav .nav-links a:hover {
         align-items: center;
         text-align: center;
     }
-    .overlay h1, .overlay h2, .overlay h2 span, .register-button, .deadline-text {
-        margin: 10px;
+    .overlay h1 {
+        font-size:2.5em;
     }
+    .overlay h2 {
+        font-size: 1.5em;
+        margin: 5px 0 0 242px;
+        font-family: 'ApexA';
+    }
+    .overlay h1, .overlay h2, .overlay h2 span, .register-button, .deadline-text {
+        margin: 2px;
+    }
+
     .horizontal-line {
         width: 80%;
         margin: 10px auto;
