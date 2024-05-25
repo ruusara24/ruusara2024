@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'ApexA';
+    src: url('include/text/apex-a.pura-008.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PoppinsLight';
+    src: url('include/text/Poppins-Medium (1).ttf') format('truetype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'PoppinsLight', sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    z-index: 1000;
+}
+
+nav .logo img {
+    max-width: 50px;
+    height: auto;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0 10px;
+    font-family: 'PoppinsLight';
+}
+
+nav .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.background {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url('include/img/slider-images/image01.jpg') no-repeat center center/cover;
+    padding-top: 60px;
+    margin-top:0px;
+}
+.logo1 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.logo1 img {
+    max-width: 100px;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 20px);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 4em;
+    margin: 10px;
+    margin-left: 90px;
+    font-family: 'ApexA';
+}
+
+.overlay h2 {
+    color: white;
+    font-size: 1.5em;
+    margin: 5px 0 0 180px;
+    font-family: 'ApexA';
+}
+
+.overlay h2 span {
+    display: block;
+    font-size: 2em;
+    margin-left: 90px;
+}
+
+.horizontal-line {
+    width: 350px;
+    border-top: 2px solid gray;
+    margin: 10px 10px 20px 200px;
+}
+
+.register-button {
+    background-color: #801917;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 230px;
+    margin-top: 20px;
+    width: 220px;
+}
+
+.register-button:hover {
+    background-color: darkred;
+}
+
+.deadline-text {
+    color: white;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-left: 210px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.section {
+    padding: 60px 20px;
+    background: #111;
+}
+
+.about-section, .gallery-section, .contact-section {
+    background: #222;
+}
+
+.events-section {
+    background: #333;
+}
+
+.events-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background: #444;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.event-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.event-card h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.event-card p {
+    margin: 10px 0;
+}
+
+.see-more {
+    background-color: #801917;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.see-more:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        align-items: center;
+        text-align: center;
+    }
+    .overlay h1, .overlay h2, .overlay h2 span, .register-button, .deadline-text {
+        margin: 10px;
+    }
+    .horizontal-line {
+        width: 80%;
+        margin: 10px auto;
+    }
+    nav .nav-links a {
+        font-size: 1em;
+    }
+    nav .logo img {
+        max-width: 40px;
+    }
+    .event-card {
+        margin: 10px;
+    }
+    .logo1 {
+        top: 10px;
+        right: 10px;
+    }
+    .logo1 img {
+        max-width: 80px;
+    }
+}
