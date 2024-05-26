@@ -142,7 +142,7 @@ nav .nav-links a:hover {
     background: #111;
 }
 
-.about-section, .gallery-section, .contact-section {
+.about-section, .gallery-section, {
     background: #222;
 }
 .about-content {
@@ -276,6 +276,68 @@ nav .nav-links a:hover {
     width: 50vh;
     background: url('./include/text/woman_bg.jpg') no-repeat center center/cover;
 }*/
+
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px
+}
+
+.logo-section {
+    max-width: 600px;
+
+}
+
+.footer-text {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+
+
+}
+
+.event-name{
+    font-size: 40px;
+}
+
+.footer_logo {
+    width: 200px;
+    height: auto;
+    display: block;
+
+
+}
+
+.event-name {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.additional-info {
+    margin: 0;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.contact-section h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.contact-section p {
+    margin: 0;
+    font-size: 14px;
+}
+
 
 @media (max-width: 768px) {
     .overlay {
