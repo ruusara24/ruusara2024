@@ -127,6 +127,7 @@ nav .nav-links a:hover {
 .register-button:hover {
     background-color: darkred;
     font-family: 'PoppinsMedium', Courier, monospace;
+    transform: scale(1.1);
 }
 
 .deadline-text {
@@ -142,7 +143,7 @@ nav .nav-links a:hover {
     background: #111;
 }
 
-.about-section, .gallery-section, {
+.about-section, .gallery-section {
     background: #222;
 }
 .about-content {
@@ -211,6 +212,7 @@ nav .nav-links a:hover {
 
 .see-more:hover {
     background-color: darkred;
+    transform: scale(1.1);
 }
 .judge-board-section {
     background: #222;
@@ -338,6 +340,29 @@ nav .nav-links a:hover {
     font-size: 14px;
 }
 
+/*----add hover effict--------*/
+.judge-board-section h2:hover {
+    color: aqua;
+}
+.gallery-section h2:hover{
+    color:aqua;
+}
+.judge-image:hover{
+    transform: scale(1.2);
+    filter: hue-rotate(330deg);
+}
+.events-section h2:hover{
+    color:aqua;
+}
+.social-media-section h2:hover{
+    color:aqua;
+}
+.about-section h2:hover{
+    color: aqua;
+}
+.event-card:hover{
+    transform: scale(1.1);
+}
 
 @media (max-width: 768px) {
     .overlay {
