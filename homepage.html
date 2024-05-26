@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruusara 2024</title>
     <link rel="stylesheet" href="styles.css">
+    <!--Navigation icon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="background" id="home">
@@ -29,12 +31,15 @@
         <div class="logo">
             <img src="./include/text/Logo2.png" alt="Logo">
         </div>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
             <a href="#home">HOME</a>
             <a href="#about">ABOUT US</a>
             <a href="#events">EVENTS</a>
             <a href="#gallery">GALLERY</a>
             <a href="#contact">CONTACTS</a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
         </div>
     </nav>
 
@@ -122,17 +127,11 @@
         <h2>Gallery</h2>
         <div class="gallery-container">
             <img src="include/past/img1.jpg" alt="Gallery Image 1">
-            <h3><b>Dubbing Comppetion(202)</b></h3>
             <img src="./include/past/img2.jpg" alt="Gallery Image 2">
-            <h3><b>Dubbing Comppetion(202)</b></h3>
             <img src="./include/past/img3.jpg" alt="Gallery Image 3">
-            <h3><b>Dubbing Comppetion(202)</b></h3>
             <img src="./include/past/img4.jpg" alt="Gallery Image 4">
-            <h3><b>Dubbing Comppetion(202)</b></h3>
             <img src="./include/past/img5.jpg" alt="Gallery Image 5">
-            <h3><b>Dubbing Comppetion(202)</b></h3>
             <img src="./include/past/img6.jpg"alt="Gallery Image 6">     
-            <h3><b>Dubbing Comppetion(202)</b></h3>
         </div>
         <button class="see-more" onclick="window.location.href='gallery.html'">SEE MORE</button>
     </section>
@@ -175,5 +174,15 @@
     </footer>
     </section>
     <script src="button.js"></script>
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById('navLinks');
+            if (navLinks.style.display === 'block') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>

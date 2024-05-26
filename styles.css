@@ -49,6 +49,14 @@ nav .nav-links a {
 
 nav .nav-links a:hover {
     text-decoration: underline;
+    color:aqua;
+}
+
+/*-----navibaricon*/
+.menu-icon{
+    display: None;
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
 .background {
@@ -399,12 +407,13 @@ nav .nav-links a:hover {
         width: 80%;
         margin: 10px auto;
     }
-    nav .nav-links a {
+    /*nav .nav-links a {
         font-size: 1em;
     }
     nav .logo img {
         max-width: 40px;
-    }
+
+    }*/
     .event-card {
         margin: 10px;
     }
@@ -480,6 +489,31 @@ nav .nav-links a:hover {
     .gallery-container {
         flex-direction: column;
     }
+    /*add responsive navigation bar*/
+    nav .logo img {
+        max-width: 40px;
+        margin-left:300px;
+    }
+    .nav-links{
+        display: None;
+        flex-direction: column;
+        width: 100px;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        text-align: center;
+        z-index: 1000;
+     }
+     .nav-links a {
+        margin: 10px 0;
+        font-size: 1.5em;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
 
 }
 @media (min-width: 769px) {
@@ -492,4 +526,13 @@ nav .nav-links a:hover {
     /*.additional-image1{
         display: none;
     }*/
+    .nav-links {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background: none;
+    }
+
+
+
 }
