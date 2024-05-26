@@ -422,6 +422,22 @@ nav .nav-links a:hover {
     .background{
         background: url("./include/text/woman_bg.jpg")no-repeat center center/cover;
     }
+    .footer-text {
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+
+
+    }
+
+    .contact-section {
+      text-align: center;
+      margin: 10%;
+    }
+
+    .footer_logo{
+        margin-bottom: 50px;
+    }
 
 }
 @media (min-width: 769px) {
