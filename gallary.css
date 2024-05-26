@@ -1,0 +1,13 @@
+.gallery-container1 img {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+.gallery-container1 img:hover{
+    transform: scale(1.2);
+}
+@media (max-width: 768px) {
+    .gallery-container1 {
+        flex-direction: column;
+    }
+}

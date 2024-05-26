@@ -360,9 +360,23 @@ nav .nav-links a:hover {
 .about-section h2:hover{
     color: aqua;
 }
-.event-card:hover{
-    transform: scale(1.1);
+
+/*gallery section*/
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.gallery-container img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+.gallery-container img:hover{
+    transform: scale(1.2);
+}
+
 
 @media (max-width: 768px) {
     .overlay {
@@ -463,11 +477,17 @@ nav .nav-links a:hover {
     .footer_logo{
         margin-bottom: 50px;
     }
+    .gallery-container {
+        flex-direction: column;
+    }
 
 }
 @media (min-width: 769px) {
     .background {
         background: url('include/img/slider-images/image01.jpg') no-repeat center center/cover;
+    }
+    .event-card:hover{
+        transform: scale(1.1);
     }
     /*.additional-image1{
         display: none;

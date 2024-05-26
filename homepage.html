@@ -18,7 +18,7 @@
                 <img src="./include/text/woman_bg.jpg" alt="" class="additional-image">
             </div>-->
 
-            <button class="register-button">REGISTER NOW</button>
+            <button class="register-button" id="google-doc-button">REGISTER NOW</button>
             <div class="deadline-text">Submission Deadline: 2024 August 20</div>
         </div>
         <div class="logo1">
@@ -120,7 +120,15 @@
 
     <section id="gallery" class="section gallery-section">
         <h2>Gallery</h2>
-        <p>Photos and videos from past events.</p>
+        <div class="gallery-container">
+            <img src="include/past/img1.jpg" alt="Gallery Image 1">
+            <img src="./include/past/img2.jpg" alt="Gallery Image 2">
+            <img src="./include/past/img3.jpg" alt="Gallery Image 3">
+            <img src="./include/past/img4.jpg" alt="Gallery Image 4">
+            <img src="./include/past/img5.jpg" alt="Gallery Image 5">
+            <img src="./include/past/img6.jpg"alt="Gallery Image 6">     
+        </div>
+        <button class="see-more" onclick="window.location.href='gallery.html'">SEE MORE</button>
     </section>
 
     <section id="social-media" class="section social-media-section">
@@ -160,5 +168,6 @@
         </div>
     </footer>
     </section>
+    <script src="button.js"></script>
 </body>
 </html>
