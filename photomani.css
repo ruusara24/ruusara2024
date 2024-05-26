@@ -27,6 +27,10 @@ body {
     text-align: center;
 }
 
+.event-details-section h2 {
+  text-align: center;
+}
+
 li {
             padding-bottom: 10px; /* Adjust the value as needed */
   }
