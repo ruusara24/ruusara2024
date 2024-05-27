@@ -1,12 +1,4 @@
 
-/*.gallery-container1 img {
-    width: 400px;
-    height: 400px;
-    margin: 10px;
-}*/
-/*.gallery-container1 img:hover{
-    transform: scale(1.2);
-}*/
 .gallar h2{
     text-align: center;
 
@@ -54,9 +46,6 @@
 }
 
 @media (max-width: 768px) {
-    /*.gallary-container1 {
-        flex-direction: column;
-    }*/
     .gallary-item {
         width: calc(50% - 30px);
     }
