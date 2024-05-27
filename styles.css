@@ -369,7 +369,11 @@ nav .nav-links a:hover {
     color: aqua;
 }
 
+
 /*gallery section*/
+.gallery-section{
+    background:#111;
+}
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
@@ -379,12 +383,19 @@ nav .nav-links a:hover {
 .gallery-container img {
     width: 200px;
     height: 200px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .gallery-container img:hover{
     transform: scale(1.2);
 }
 
+#gallery h2{
+    text-align: center;
+}
+.social-media-section h2{
+    text-align: center;
+}
 
 @media (max-width: 768px) {
     .overlay {
@@ -492,7 +503,7 @@ nav .nav-links a:hover {
     /*add responsive navigation bar*/
     nav .logo img {
         max-width: 40px;
-        margin-left:300px;
+        margin: left 50%;
     }
     .nav-links{
         display: None;
@@ -501,17 +512,21 @@ nav .nav-links a:hover {
         background: rgba(0, 0, 0, 0.9);
         position: absolute;
         top: 60px;
-        right: 0;
+        right: 5px;
         text-align: center;
         z-index: 1000;
      }
      .nav-links a {
         margin: 10px 0;
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .menu-icon {
+        margin-right: 10px;
         display: block;
+    }
+    .menu-icon:hover{
+        color: red;
     }
 
 

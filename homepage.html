@@ -38,7 +38,7 @@
             <a href="#gallery">GALLERY</a>
             <a href="#contact">CONTACTS</a>
         </div>
-        <div class="menu-icon" onclick="toggleMenu()">
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
         </div>
     </nav>
@@ -133,7 +133,7 @@
             <img src="./include/past/img5.jpg" alt="Gallery Image 5">
             <img src="./include/past/img6.jpg"alt="Gallery Image 6">
         </div>
-        <button class="see-more" onclick="window.location.href='gallery.html'">SEE MORE</button>
+        <button id="see-more1" class="see-more" onclick="window.location.href='gallery.html'">SEE MORE</button>
     </section>
 
     <section id="social-media" class="section social-media-section">
@@ -177,10 +177,14 @@
     <script>
         function toggleMenu() {
             var navLinks = document.getElementById('navLinks');
+            var menuIcon = document.getElementById('menuIcon');
             if (navLinks.style.display === 'block') {
                 navLinks.style.display = 'none';
+                menuIcon.innerHTML = '<i class="fas fa-times"></i>';
+                menuIcon.innerHTML = '<i class="fas fa-bars"></i>';
             } else {
                 navLinks.style.display = 'block';
+                menuIcon.innerHTML = '<i class="fas fa-times"></i>';
             }
         }
     </script>
