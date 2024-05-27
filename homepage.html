@@ -38,7 +38,7 @@
             <a href="#gallery">GALLERY</a>
             <a href="#contact">CONTACTS</a>
         </div>
-        <div class="menu-icon" onclick="toggleMenu()">
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
         </div>
     </nav>
@@ -73,7 +73,7 @@
             </div>
             <div class="event-card">
                 <img src="./include/text/digital_art.jpg" alt="Event 2">
-                <h3>Digital Art</h3>
+                <h3>Character design</h3>
                 <p>නිර්මාණ භාරගැනීම 2024 ජූලි මස 9 වන දින සිට අගෝස්තු මස 13 වන දින දක්වා විවෘතව ඇත.</p>
                 <button class="see-more" onclick="window.location.href='DigitalArt.html'">SEE MORE</button>
             </div>
@@ -126,14 +126,37 @@
     <section id="gallery" class="section gallery-section">
         <h2 align="center">Gallery</h2>
         <div class="gallery-container">
-            <img src="include/past/img1.jpg" alt="Gallery Image 1">
-            <img src="./include/past/img2.jpg" alt="Gallery Image 2">
-            <img src="./include/past/img3.jpg" alt="Gallery Image 3">
-            <img src="./include/past/img4.jpg" alt="Gallery Image 4">
-            <img src="./include/past/img5.jpg" alt="Gallery Image 5">
-            <img src="./include/past/img6.jpg"alt="Gallery Image 6">
+            <div class="gallery-item">
+                <img src="include/past/img1.jpg" alt="Gallery Image 1">
+                <h3><b>Dubbing Competition(2022)</b></h3>
+            </div>
+            <div class="gallery-item">
+                <img src="./include/past/img2.jpg" alt="Gallery Image 2">
+                <h3><b>Photo Manipulation Competition(2022)</b></h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="./include/past/img3.jpg" alt="Gallery Image 3">
+                <h3><b>Character design Competition(2022)</b></h3>
+            </div>
+           
+            <div class="gallery-item">
+                <img src="./include/past/img4.jpg" alt="Gallery Image 4">
+                <h3><b>Dubbing Competition(2021)</b></h3>
+            </div>
+        
+            <div class="gallery-item">
+                <img src="./include/past/img5.jpg" alt="Gallery Image 5">
+                <h3><b>Character design Competition(2021)</b></h3>
+            </div>
+        
+            <div class="gallery-item">
+                <img src="./include/past/img6.jpg"alt="Gallery Image 6">
+                <h3><b>Character design Competition(2021)</b></h3>
+            </div>
+        
         </div>
-        <button class="see-more" onclick="window.location.href='gallery.html'">SEE MORE</button>
+        <button id="see-more1" class="see-more" onclick="window.location.href='gallery.html'">SEE MORE</button>
     </section>
 
     <section id="social-media" class="section social-media-section">
@@ -165,7 +188,7 @@
                 <h4>Reach Us</h4>
                 <p>Email: ruusara2024@gmail.com</p><br>
                 <p>Mobile:
-                <p>076 0513013 (Anjana)</p>
+                <p>076 0513010 (Anjana)</p>
                 <p>070 1068811 (Hirushi)</p>
                 <p>071 5284974 (Chathupa)</p>
                 <p>071 1940968 (Cholaka)</p>
@@ -177,10 +200,14 @@
     <script>
         function toggleMenu() {
             var navLinks = document.getElementById('navLinks');
+            var menuIcon = document.getElementById('menuIcon');
             if (navLinks.style.display === 'block') {
                 navLinks.style.display = 'none';
+                menuIcon.innerHTML = '<i class="fas fa-times"></i>';
+                menuIcon.innerHTML = '<i class="fas fa-bars"></i>';
             } else {
                 navLinks.style.display = 'block';
+                menuIcon.innerHTML = '<i class="fas fa-times"></i>';
             }
         }
     </script>

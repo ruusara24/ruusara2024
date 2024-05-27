@@ -45,11 +45,15 @@ nav .nav-links a {
     font-size: 1em;
     margin: 0 10px;
     font-family: 'PoppinsLight';
+    transition: font-size,.2s;
+    transition: .2s;
 }
 
 nav .nav-links a:hover {
     text-decoration: underline;
     color:aqua;
+    font-size:20px;
+    transition: .2s;
 }
 
 /*-----navibaricon*/
@@ -369,22 +373,65 @@ nav .nav-links a:hover {
     color: aqua;
 }
 
+
 /*gallery section*/
+.gallery-section{
+    background:#111;
+}
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /*-------------------*/
+    gap:20px;
+    padding: 20px;
+}
+.gallery-item {
+    position: relative;
+    border: 2px solid white;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    max-width: 300px; /* Ensure images do not get too large */
+    flex: 1 1 calc(33.333% - 40px); /* Three items per row with space for gaps */
 }
 
-.gallery-container img {
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item h3 {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color:white;
+}
+
+/*.gallery-container img {
     width: 200px;
     height: 200px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .gallery-container img:hover{
     transform: scale(1.2);
+}*/
+
+#gallery h2{
+    text-align: center;
 }
 
+
+
+.social-media-section h2{
+    text-align: center;
+}
 
 @media (max-width: 768px) {
     .overlay {
@@ -486,32 +533,44 @@ nav .nav-links a:hover {
     .footer_logo{
         margin-bottom: 50px;
     }
-    .gallery-container {
+    /*.gallery-container {
         flex-direction: column;
-    }
+    }*/
     /*add responsive navigation bar*/
     nav .logo img {
         max-width: 40px;
-        margin-left:300px;
+        margin: left 50%;
     }
     .nav-links{
         display: None;
         flex-direction: column;
-        width: 100px;
+        width: 100%;
+        height: 100hv;
         background: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 60px;
-        right: 0;
+        position: relative;
+        top: 90px;
+        right: 5px;
         text-align: center;
         z-index: 1000;
+        border-radius: 8px;
      }
      .nav-links a {
         margin: 10px 0;
-        font-size: 1.5em;
+        font-size: 1.8em;
+        line-height: 50px;
+        transition: font-size,.2s;
     }
 
     .menu-icon {
+        margin-right: 10px;
         display: block;
+    }
+    .menu-icon:hover{
+        color: red;
+    }
+
+    .gallery-item {
+        flex: 1 1 calc(50% - 40px); /* Two items per row */
     }
 
 
@@ -533,6 +592,9 @@ nav .nav-links a:hover {
         background: none;
     }
 
+    .gallery-item {
+        flex: 1 1 calc(100% - 40px); /* One item per row */
+    }
 
 
 }
