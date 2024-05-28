@@ -598,3 +598,16 @@ nav .nav-links a:hover {
 
 
 }
+@media (max-width:368px){
+    .logo1 {
+        top: 2px;
+        right: 5px;
+    }
+    .logo1 img {
+        max-width: 50px;
+        margin: 5px;
+    }
+    .overlay h1{
+        margin:10px;
+    } 
+}
