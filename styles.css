@@ -51,7 +51,7 @@ nav .nav-links a {
 
 nav .nav-links a:hover {
     text-decoration: underline;
-    color:aqua;
+    color:red;
     font-size:20px;
     transition: .2s;
 }
@@ -354,23 +354,23 @@ nav .nav-links a:hover {
 
 /*----add hover effict--------*/
 .judge-board-section h2:hover {
-    color: aqua;
+    color: red;
 }
 .gallery-section h2:hover{
-    color:aqua;
+    color:red;
 }
 .judge-image:hover{
     transform: scale(1.2);
     filter: hue-rotate(330deg);
 }
 .events-section h2:hover{
-    color:aqua;
+    color:red;
 }
 .social-media-section h2:hover{
-    color:aqua;
+    color:red;
 }
 .about-section h2:hover{
-    color: aqua;
+    color: red;
 }
 
 
@@ -626,7 +626,10 @@ nav .nav-links a:hover {
 
 
 }
-@media (max-width:368px){
+@media (max-width:400px){
+    .background{
+        height:150vh; 
+    };
     .logo1 {
         top: 2px;
         right: 5px;
