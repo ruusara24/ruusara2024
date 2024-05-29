@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubbing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="debuging.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./include/text/Logo2.png" alt="Logo">
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="homepage.html">HOME</a>
+          <a href="homepage.html#about">ABOUT US</a>
+          <a href="homepage.html#events">EVENTS</a>
+          <a href="homepage.html#gallery">GALLERY</a>
+          <a href="homepage.html#contact">CONTACTS</a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section id="event-details" class="section event-details-section">
+        <img id="event-image" src="./include/text/dubbing.jpg" alt="Event Image">
+        <h3 id="event-title">DEBUGING</h3>
+        <hr>
+        <h2><b><u>போட்டி விதிமுறைகள் மற்றும் ஒழுங்குமுறைகள்</u></b></h2>
+        <p id="event-description">போட்டியில் பங்கேற்கும் அனைத்து பங்கேற்பாளர்களும் அனைத்து போட்டி விதிமுறைகளையும் முழுமையாக படித்து புரிந்துகொள்வது அவசியம்.</p>
+        <ul>
+            <li>பதிவேற்றுவதற்கு முன்பு, எங்கள் இணையதளத்தின் மூலம் பதிவு செய்து, ஒரு பதிவு எண்ணை பெற வேண்டும். (சமயோசித தகவல்கள் WhatsApp மூலம் அறிவிக்கப்படும்).</li>
+            <li>குறிப்பிட்ட தேதிக்கு முன்னர் இணையதளத்தில் பதிவு செய்து, ஒரு எண்ணை பெற வேண்டும்.</li>
+            <li>பங்கேற்பாளர்கள் தங்கள் படைப்புகளை குறிப்பிட்ட தேதிக்கு முன்னர் ஆன்லைன் மூலம் சமர்ப்பிக்க வேண்டும்.</li>
+            <li>உங்கள் குரல் பதிவுக்கான ஸ்கிரிப்ட் உங்கள் சொந்த படைப்பாக இருக்க வேண்டும்.</li>
+            <li>கார்ட்டூன் கதாபாத்திரங்களுக்கான குரல் பதிவுகள் மற்றும் மனிதக் கதாபாத்திரங்களுக்கான குரல் பதிவுகள் என இரண்டு பிரிவுகளில் நீங்கள் விரும்பிய 2 வீடியோக்களுக்கு குரல் பதிவு செய்யலாம்.</li>
+            <li>வீடியோக்களை திருத்தம் செய்யவோ அல்லது மாற்றங்களுக்குள்ளாக்கவோ கூடாது.</li>
+            <li>ஒரு குழு 2 படைப்புகளை மட்டுமே சமர்ப்பிக்க முடியும்.</li>
+            <li>ஒரு குழுவில் சேரக்கூடிய உறுப்பினர்களின் அதிகபட்ச எண்ணிக்கை 5 ஆகும்.</li>
+            <li>அரசியல் அவதூறுகள் மற்றும் இனவாதக் கருத்துக்கள் இல்லாதிருக்க வேண்டும். அத்தகைய கருத்துக்கள் இடம்பெற்றால், போட்டியிலிருந்து நீக்கப்படும்.</li>
+            <li>கொடூரமான வார்த்தைகள், கடுமையான வார்த்தைகள், முறைகேடான வார்த்தைகள் பயன்படுத்தப்படக்கூடாது. அத்தகைய வார்த்தைகள் இடம்பெற்றால், போட்டியிலிருந்து நீக்கப்படும்.</li>
+            <li>பதிவேற்றப்படும் வீடியோக்களின் அளவு 500MBக்குக் குறைவாக இருக்க வேண்டும்.</li>
+            <li>வீடியோக்கள் mp4 வடிவத்தில் சமர்ப்பிக்கப்பட வேண்டும். 1920x1080 மற்றும் விரும்பிய frame rate ஐப் பயன்படுத்தலாம்.</li>
+            <li>சமர்ப்பிக்கப்படும் அனைத்து வீடியோக்களிலும் எந்த வகையான லோகோக்கள் (logo), பதிப்புரிமை குறிகள் (copyright marks), அடையாளக் குறிகள் (identifying marks), எல்லைகள் (borders) அல்லது பிற எந்த வகையான குறிகளும் இல்லாதிருக்க வேண்டும்.</li>
+            <li>போட்டி 2 பிரிவுகளாக நடைபெறும்: தன்னாட்சியான மற்றும் பிரபலமான படைப்புகள்.</li>
+            <li>தன்னாட்சியான வீடியோக்கள் பரிசீலனைக் குழுவால் தேர்ந்தெடுக்கப்படும், மேலும் அவற்றில் சிறந்த 10 தன்னாட்சியான வீடியோக்கள் எங்கள் Facebook பக்கத்தில் பதிவேற்றப்படும். அவற்றில் பிரபலமானது Facebook லைக்குகள் மூலம் தேர்ந்தெடுக்கப்படும்.</li>
+            <li>பரிசீலனைக் குழுவின் முடிவுகள் இறுதி முடிவாகும்.</li>
+            <li>இந்தப் போட்டி பிரிவுக்கு ஆன்லைன் மூலம் பயிற்சி பணியகங்கள் நடத்தத் திட்டமிடப்பட்டுள்ளன, அவை போட்டியின் படைப்புகளைப் பெறும் காலத்தின் போது நடத்தப்படும்.</li>
+            <li>மதிப்பீட்டில் பரிசீலனைக் குழு முக்கியமாக கவனிக்கும்:
+              <p>a. வீடியோவின் தன்னாட்சிமை</p>
+              <p>b. கதாபாத்திரத்திற்கேற்ற குரல் பொருத்தம் மற்றும் கட்டுப்பாடு</p>
+              <p>c. வீடியோ மற்றும் உரையாடல்களின் சீரான ஓட்டம்</p>
+              <p>d. வீடியோவின் உரையாடல்களின் அர்த்தம் மற்றும் இணக்கப்பாடுகள்.</p>
+            </li>
+            <li>இறுதிப் படைப்பு, பதிவு எண் பெயரில் (Rename) கொண்ட தனித்த zip / rar கோப்பாக பதிவேற்றப்பட வேண்டும்.</li>
+            <li>பதிவேற்றுவதற்கு முன்பு, எங்கள் இணையதளத்தில் உள்ள Google படிவத்தை பூர்த்தி செய்து அதன்மூலம் zip கோப்பை பதிவேற்ற வேண்டும்.</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo-section">
+                <img src="include\text\uni_logo.png" alt="Logo" class="footer_logo">
+
+            </div>
+            <div class="footer-text">
+                <p class="event-name">"என்னை எழுப்பு என் தேசமே"<br> என்னை எழுப்பு என் தேசமே - 2024</p><br>
+                <p class="additional-info">மாணவர் ஒன்றியம், இலக்கிய உபகுழு,<br> பேராதெனிய பல்கலைக்கழகம்</p>
+            </div >
+            <div class="contact-section">
+                <h4>Reach Us</h4>
+                <p>Email: ruusara2024@gmail.com</p><br>
+                <p>Mobile:
+                <p>076 0513010 (Anjana)</p>
+                <p>070 1068811 (Hirushi)</p>
+                <p>071 5284974 (Chathupa)</p>
+                <p>071 1940968 (Cholaka)</p>
+            </div>
+        </div>
+    </footer>
+    </section>
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById('navLinks');
+            if (navLinks.style.display === 'block') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
