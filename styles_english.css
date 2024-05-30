@@ -145,7 +145,7 @@ body, html {
     width: 100%;
     background: url('include/img/slider-images/image01.jpg') no-repeat center center/cover;
     padding-top: 60px;
-    margin-top:0px;
+    margin-top:50px;
 }
 .logo1 {
     position: absolute;
@@ -175,13 +175,13 @@ body, html {
     color: white;
     font-size:4.5em;
     margin: 10px;
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
 .overlay h2  {
     color: white;
     font-size: 1.5em;
-    margin: 5px 0 0 365px;
+    margin: 5px 0 0 130px;
     text-align: center;
 }
 
@@ -206,7 +206,7 @@ body, html {
     font-size: 1.2em;
     cursor: pointer;
     border-radius: 5px;
-    margin-left: 390px;
+    margin-left: 300px;
     margin-top: 20px;
     width: 220px;
 }
@@ -221,7 +221,7 @@ body, html {
     color: white;
     font-size: 1em;
     margin-top: 20px;
-    margin-left: 361px;
+    margin-left: 280px;
     font-family: 'PoppinsLight', Courier, monospace;
 }
 
@@ -248,7 +248,7 @@ body, html {
 .about-content .about-text {
     border-left: 3px solid red;
     padding-left: 20px;
-    height: 400px;
+    height: 300px;
 }
 #about h2 {
     text-align: center;
@@ -575,7 +575,7 @@ body, html {
         border-left: none;
         padding-left: 0;
         text-align: left;
-        height: 600px;
+        height: 410px;
     }
 
     .about-section h2 {
@@ -585,7 +585,7 @@ body, html {
         border-left: 3px solid red;
         padding-left: 20px;
         text-align: left;
-        height: 600px;
+        height: 410px;
     }
     .judges-container {
         flex-direction: column;
