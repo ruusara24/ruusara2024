@@ -17,9 +17,12 @@ body, html {
     background-color: #000;
     color: white;
     font-family: 'PoppinsLight';
+    box-sizing: border-box;
+    --color1: #FFF;
+    --color2: #181818;
 }
 
-nav {
+/*nav {
     position: sticky;
     top: 0px;
     width: 100%;
@@ -54,6 +57,81 @@ nav .nav-links a:hover {
     color:red;
     font-size:20px;
     transition: .2s;
+}*/
+.nav {
+    width: 100%;
+    background-color: var(--color2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+.nav.active {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 12px 20px;
+}
+.logo img{
+    width: 40px;
+    position: relative;
+    left: 10px;
+    transform: translateX((-50%));
+}
+
+.menu {
+    display: flex;
+    flex-grow: 1;
+}
+.menu li {
+    padding-left: 30px;
+}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {
+    width: 100%;
+}
+.open-menu, .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 10px;
+}
+#check {
+    display: none;
 }
 
 /*-------------------language translater-----------------------*/
@@ -83,11 +161,11 @@ nav .nav-links a:hover {
 }
 
 /*-----navibaricon*/
-.menu-icon{
+/*.menu-icon{
     display: None;
     font-size: 1.5em;
     cursor: pointer;
-}
+}*/
 
 .background {
     position: relative;
@@ -566,7 +644,36 @@ nav .nav-links a:hover {
         flex-direction: column;
     }*/
     /*add responsive navigation bar*/
-    nav .logo img {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {
+        margin-top: 40px;
+    }
+    .menu li a {
+        padding: 10px;
+    }
+    .open-menu, .close-menu {
+        display: block;
+    }
+    #check:checked ~ .menu {
+        left: 0;
+    }
+    .logo img{
+        position: relative;
+        left: 50%;
+    }
+    /*nav .logo img {
         max-width: 40px;
         margin: left 50%;
     }
@@ -596,7 +703,7 @@ nav .nav-links a:hover {
     }
     .menu-icon:hover{
         color: red;
-    }
+    }*/
 
     .gallery-item {
         flex: 1 1 calc(50% - 40px); /* Two items per row */

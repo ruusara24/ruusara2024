@@ -9,9 +9,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav>
+    <nav class="nav">
+        <ul class="nav-bar">
+            <li class="logo"><a href="#"><img src="./include/text/Logo2.png" alt="Logo"/></a></li>
+            <input type="checkbox" id="check" />
+            <span class="menu">
+                <li><a href="#home">HOME</a></li>
+                <li> <a href="#about">ABOUT US</a></li>
+                <li><a href="#events">EVENTS</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#contact">CONTACTS</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            <div class="language-switcher">
+                <a href="homepage_english.html">EN</a> | 
+                <a href="homepage.html">සිංහල</a> | 
+                <a href="index_ta.html">தமிழ்</a>
+            </div>
+        </ul>
+    </nav>
+    <!--<nav>
         <div class="logo">
-           <!--<img src="./include/text/Logo2.png" alt="Logo"> -->
+           <img src="./include/text/Logo2.png" alt="Logo">
         </div>
         <div class="language-switcher">
             <a href="homepage_english.html">EN</a> | 
@@ -28,7 +48,7 @@
         <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
           <i class="fas fa-bars"></i>
         </div>
-    </nav>
+    </nav>-->
     <div class="background" id="home">
         <div class="overlay">
             <h1>"LET MY COUNTRY AWAKE"
