@@ -139,14 +139,18 @@ body, html {
     color: white;
     font-size:4.5em;
     margin: 10px;
+    margin-bottom: 30px;
+    line-height: 75px;
     margin-left: 165px;
     font-family: 'ApexA';
 }
 
 .overlay h2 {
     color: white;
-    font-size: 1.5em;
-    margin: 5px 0 0 242px;
+    text-align: center;
+    font-size: 2em;
+    line-height: 30px;
+    margin: 5px 0 0 235px;
     font-family: 'ApexA';
 }
 
@@ -485,16 +489,19 @@ body, html {
         align-items: center;
         text-align: center;
     }
+    .overlay h1, .overlay h2, .overlay h2 span, .register-button, .deadline-text {
+        margin: 2px;
+    }
+
     .overlay h1 {
         font-size:4.5em;
+        margin-bottom: 35px;
     }
     .overlay h2 {
         font-size: 2.5em;
-        margin: 5px 0 0 242px;
+        margin: 5px 10 0 242px;
         font-family: 'ApexA';
-    }
-    .overlay h1, .overlay h2, .overlay h2 span, .register-button, .deadline-text {
-        margin: 2px;
+        margin-inline: 30px;
     }
 
     .horizontal-line {
@@ -622,7 +629,7 @@ body, html {
 }
 @media (max-width:400px){
     .background{
-        height:150vh; 
+        height:150vh;
     };
     .logo1 {
         top: 2px;
@@ -634,5 +641,10 @@ body, html {
     }
     .overlay h1{
         margin:10px;
-    } 
+        margin-bottom: 30px;
+    }
+    .overlay h2{
+        margin:10px;
+        margin-inline: 30px;
+    }
 }
