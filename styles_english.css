@@ -176,6 +176,7 @@ body, html {
     font-size:4.5em;
     margin: 10px;
     margin-left: 30px;
+    text-align: center;
 }
 
 .overlay h2  {
@@ -195,7 +196,7 @@ body, html {
 .horizontal-line {
     width: 350px;
     border-top: 2px solid gray;
-    margin: 10px 10px 20px 165px;
+    margin: 10px 10px 20px 200px;
 }
 
 .register-button {
